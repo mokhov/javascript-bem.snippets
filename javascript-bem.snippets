@@ -1,13 +1,11 @@
 snippet b
 	{
-		block: '${1:blockName}',
-		${2}
+		block: '${1:blockName}'${2}
 	}
 snippet B
 	[
 		{
-			block: '${1:blockName}',
-			${2}
+			block: '${1:blockName}'${2}
 		}
 	]
 snippet bc
@@ -25,14 +23,12 @@ snippet bcm
 # elements
 snippet e
 	{
-		elem: '${1:elemName}',
-		${2}
+		elem: '${1:elemName}'${2}
 	}
 snippet E
 	[
 		{
-			elem: '${1:elemName}',
-			${2}
+			elem: '${1:elemName}'${2}
 		}
 	]
 snippet ec
@@ -43,25 +39,24 @@ snippet ec
 snippet ecm
 	{
 		elem: '${1:blockName}',
-		elemMods: {'${2:modName}': '${3:modValue}', ${4}},
+		elemMods: {'${2:modName}': '${3:modValue}'${4}},
 		content: '${5:content}'
 	}${6}
 
 # inner
 snippet a
-	attrs: {'${1:attrName}': '${2:attrValue}', ${3}}${4}
+	attrs: {'${1:attrName}': '${2:attrValue}'${3}}${4}
 snippet c
 	content: ${1}
 snippet ce
 	content: {
-		elem: '${1:elemName}',
-		${2}
+		elem: '${1:elemName}'${2}
 	}
 snippet m
-	mods: {'${1:modName}': '${2:modValue}', ${3}}${4}
+	mods: {'${1:modName}': '${2:modValue}'${3}}${4}
 snippet em
-	elemMods: {'${1:modName}': '${2:modValue}', ${3}}${4}
+	elemMods: {'${1:modName}': '${2:modValue}'${3}}${4}
 snippet mi
 	mix: [
-		${1}
+		{${1}}
 	]
